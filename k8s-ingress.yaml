@@ -1,17 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: martino-test-service
+  name: martino-service
   namespace: martino-app
 spec:
   rules:
-  - host: "centos8"
+  - host: "jojolinux"
     http:
       paths:
       - pathType: Prefix
         path: "/"
         backend:
           service:
-            name: martino-test-service
+            name: martino-service
             port:
               number: 80
