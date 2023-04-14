@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: martino-test-service 
+  name: martino-service 
   namespace: martino-app
 spec:
   type: NodePort
