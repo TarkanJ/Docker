@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: httpbin-deployment
+  name: martino-nginx-deployment
   namespace: 	martino-app
   labels:
     app: httpbin
