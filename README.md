@@ -1,5 +1,5 @@
 Basic Docker deployment for Dummies ;)
 
-👋 Hi You from Linux my Dear Jay!
+👋 Hi from higly-tuned Linux  Dear Jay!
 
 admin Martino 2022
