@@ -1,6 +1,6 @@
 Basic Docker deployment for Dummies ;)
 
-👋Hi from highly-tuned Linux dear Jay!
+👋 Hi from highly-tuned Linux dear Jay!
 
 # HowTo
 
@@ -14,8 +14,8 @@ docker build -t db-test .
 docker run -d -p 3696:80 -p 3306:3306 --name database-php-test db-test
 ```
 
-alternative port is used :3696 instead of :80(0.0.0.0:3696->80/tcp)
-due to possible collision in network ###
+👉 alternative port is used :3696 instead of :80(0.0.0.0:3696->80/tcp)
+due to possible collision in network
 
 ## Connect to a container
 ```
