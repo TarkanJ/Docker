@@ -51,8 +51,10 @@ mysql -u root -ptoor
 ### SQL BASICs:
 ```
 SHOW DATABASES;
+USE DATABASES;
 SHOW TABLES;
 DESCRIBE <table_name>;
+SELECT User, Host, Password FROM mysql.user;
 ```
 
 ### Creating a user "martin" with password "martin"
@@ -75,14 +77,19 @@ FLUSH PRIVILEGES;
 SHOW GRANTS FOR 'martin'@'%';
 ```
 
-## IMPORT SQL database
+## IMPORT SQL database with data to EMPTY database
 ```
-mysql -u martin -p guitarshop.sql < guitarshop.sql
+mysql -u martin -pmartin <db_name> < guitarshop.sql
 ```
 
 ## IMPORT database through DOCKER connection directly to container:
 ```
-docker exec -i <db_container> mysql -u martin -pmartin <db_name> < dump.sql
+docker exec -i <db_container> mysql -u martin -pmartin <db_name> < guitarshop.sql
+```
+
+## EXPORT/DUMP database through DOCKER connection directly to container:
+```
+docker exec -i <db_container> mysql -u martin -pmartin <db_name> > dump.sql
 ```
 
 ## MariaDB
