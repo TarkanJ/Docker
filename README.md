@@ -19,7 +19,7 @@ due to possible collision in network
 
 ## Connect to a container
 ```
-docker exec -it db-test bash
+docker exec -it database-php-test bash
 ```
 
 DevOps Martino 2022-2026
