@@ -2,6 +2,16 @@ Basic Docker deployment for Dummies ;)
 
 👋 Hi from highly-tuned Linux dear Jay!
 
+This Dockefile contains:
+
+
+- PHP-FPM (FastCGI Process Manager)
+- an advanced, high-performance alternative to standard PHP FastCGI,
+designed to handle heavy-loaded, high-traffic websites efficiently.
+- MySQL database 
+- Apache HTTP server
+
+
 # HowTo
 
 ## Build image
@@ -99,9 +109,9 @@ docker cp index.html <container_name>:/var/www/html/
 docker cp dir/ <db_container>:/var/www/html
 ```
 
-## Check if PHP-FPM in running container
+## Check if PHP-FPM listens in running container
 ```
-docker exec -it ab8c35b8301d netstat -tlnp
+docker exec -it <php-fpm_container> netstat -tlnp
 ```
 
 ### Output something like that:
