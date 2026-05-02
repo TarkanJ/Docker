@@ -80,9 +80,9 @@ SHOW GRANTS FOR 'martin'@'%';
 mysql -u martin -p guitarshop.sql < guitarshop.sql
 ```
 
-## DUMP/EXPORT => database through DOCKER connection directly to container:
+## IMPORT database through DOCKER connection directly to container:
 ```
-docker exec -i <db_container> mysql -u rmartin -pmartin <db_name> < dump.sql
+docker exec -i <db_container> mysql -u martin -pmartin <db_name> < dump.sql
 ```
 
 ## MariaDB
