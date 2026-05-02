@@ -51,7 +51,7 @@ mysql -u root -ptoor
 ### SQL BASICs:
 ```
 SHOW DATABASES;
-USE DATABASES;
+USE DATABASE <db_name>;
 SHOW TABLES;
 DESCRIBE <table_name>;
 SELECT User, Host, Password FROM mysql.user;
