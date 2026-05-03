@@ -87,14 +87,14 @@ mysql -u martin -pmartin <db_name> < guitarshop.sql
 docker exec -i <db_container> mysql -u martin -pmartin <db_name> < guitarshop.sql
 ```
 
-## EXPORT/DUMP database through DOCKER connection directly to container:
+## EXPORT/DUMP (mysqldump)database through DOCKER connection directly to container:
 ```
-docker exec -i <db_container> mysql -u martin -pmartin <db_name> > dump.sql
+docker exec <db_container> mysqldump -u martin -pmartin <db_name> > dump_db.sql
 ```
 
-## MariaDB
+## MariaDB Export/Dump
 ```
-docker exec -i <db_container> mariadb -u martin -pmartin <db_name> < database.sql
+docker exec <db_container> mariadb-dump -u martin -pmartin <db_name> > dump_db.sql
 ```
 
 ## Check Database through DOCKER
