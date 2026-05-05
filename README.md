@@ -1,4 +1,4 @@
-Basic Docker deployment for Dummies ;)
+Basic 🐳Docker deployment for Dummies ;)
 
 👋 Hi from highly-tuned Linux dear Jay!
 
